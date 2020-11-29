@@ -1,0 +1,211 @@
+body{
+  font-family: 'Airbnb Cereal App', sans-serif;
+  padding:0;
+  margin:0;
+}
+
+#row1 {
+  height: 10vh;
+  width:100vw; 
+  height:9vh;
+}
+
+#sidecol9{
+  font-size: 2rem; 
+  padding-top: 5px;
+  
+}
+
+#sidecol9 .fooditem{
+  padding-left:450px;
+  font-size:2.5rem;
+}
+
+#sidecol9 .search{
+  float:right; 
+  padding-top:5px; 
+  padding-right:10px;
+}
+
+#burger {
+  display:none;
+}
+
+#burger:checked ~ div.sidebar {
+ animation: slide-in 0.5s ease;
+ animation-fill-mode: forwards;
+}
+
+.menu-bar {
+  color:#FFF;
+  font-size:25px;
+  cursor:pointer;
+  margin-left:30px;
+  margin-top:15px;
+}
+
+.menu-bar:hover {
+  background-color: lightgrey;
+}
+
+.sidebar {
+  position:fixed;
+  background-color:white;
+  height:100vh;
+  z-index:1;
+  width:100px;
+  margin-top: 8px;
+  animation: slide-out 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.sidebar ul li {
+  list-style:none;
+  margin-top: 30px; 
+}
+
+.sidebar ul li a {
+  text-decoration:none;
+  display:block;
+}
+
+.sidebar ul li a:hover{
+  background-color:white;
+}
+
+.sidebar ul li a img {
+  width:40px;
+  height:55px;
+  padding-top:15px;
+}
+
+@keyframes slide-in {
+ from {left: -250px;}
+ to {left: 0;}
+}
+
+@keyframes slide-out {
+ from {left: 0;}
+ to {left: -250px;}
+}
+
+#carthead{
+  font-size: 2rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#row2 {
+  height: 100vh;
+}
+
+#menucol9{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  overflow: scroll;
+  height: 100%;
+  background-color: rgba(190, 195, 202, 0.3);
+}
+
+#rowcard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+#rowcard p{
+  font-size: 22px;
+}
+
+.card {
+  margin-bottom: 20px;
+  transition: 0.3s;
+  border:none;
+  border-radius: 15px 15px 0px 0px;
+  width: 300px;
+}
+
+.card-img-top{
+  background: rgba(190, 195, 202, 0.3);
+}
+
+.card-body {
+  padding: 15px 15px;
+  text-align: left;
+  font-size: 18px;
+  background: rgba(190, 195, 202, 0.3);
+  border: none;
+}
+
+
+#cartcol3{
+  text-align: center;
+  padding-top: 80px;
+}
+
+.numberCircle {
+  font-size: 23px;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: #57CAD5;
+  display: inline-block;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 50%;
+  }
+
+  #row1{
+    display: inline-block;
+  }
+
+  #carthead span{
+    display: none;
+  }
+
+  #cfrow2{
+    overflow: scroll;
+  }
+
+  .numberCircle{
+    display: none;
+  }
+
+  
+}
+  
+@media screen and (max-width: 650px) {
+  .sidebar {
+    width:90px;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  #sidecol9 .fooditem{
+    padding-left:35px;
+    font-size: 30px;
+  }
+
+  #sidecol9 .search{
+    padding:0;
+    width: 30px;
+    height:30px;
+  }
+
+  .menu-bar{
+    padding-left:3px;
+    margin-left:13px;
+    margin-top:8px;
+  }
+
+}

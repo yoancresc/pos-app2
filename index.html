@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POS App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container-fluid" id="cfrow1"> 
+  <div class="row" id="row1">
+    <div class="col-md-9 border" id="sidecol9">
+        <input type="checkbox" id="burger"/>
+        <label class="fa fa-bars menu-bar" for="burger" style="color:black"></label>
+        <span class="fooditem">Food Items</span>
+        <span class="search"><a href="#"><img src="asset/magnifying-glass.png"></a></span>
+    
+          <div class="sidebar">
+            <nav>
+              <ul>
+                <li><a href="#"><img src="asset/fork.png"></a></li>
+                <li><a href="#"><img src="asset/clipboard.png"></a></li>
+                <li><a href="#"><img src="asset/add.png"></a></li>
+              </ul>
+            </nav>
+          </div>
+    </div>
+    <div class="col-md-3 border" id="carthead">
+        <span>Cart </span>
+      <div class="numberCircle">0</div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="cfrow2"> 
+  <div class="row" id="row2">
+      <div class="col-md-9" id="menucol9">
+        <div class="container">
+          <div class="row" id="rowcard">
+            <div class="card">
+              <img class="card-img-top" src="asset/300gudeg.jpg" style="border-radius: 15px 15px 0px 0px;">
+              <div class="card-body">
+                <p class="card-text">Gudeg Complete Set</p>
+                <h5 class="card-title">Rp 30.000</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="asset/300furo.jpg" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Furoshiki Package</p>
+                <h5 class="card-title">Rp 65.000</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="asset/300macaron.jpg" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Macaron</p>
+                <h5 class="card-title">Rp 40.000</h5>
+              </div>
+            </div> 
+            <div class="card">
+              <img class="card-img-top" src="asset/300macaroni.png" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Macaroni Schotel</p>
+                <h5 class="card-title">Rp 15.000</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="asset/300sate.jpg" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Satay</p>
+                <h5 class="card-title">Rp 30.000</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="asset/300dango.jpg" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Dango</p>
+                <h5 class="card-title">Rp 20.000</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="asset/300boba.jpg" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Boba</p>
+                <h5 class="card-title">Rp 18.000</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="asset/300somtam.jpg" style="border-radius: 15px 15px 0px 0px">
+              <div class="card-body">
+                <p class="card-text">Som Tam</p>
+                <h5 class="card-title">Rp 22.000</h5>
+              </div>
+            </div>
+          </div> 
+        </div>
+    </div>
+    <div class="col-md-3 bg-white" id="cartcol3">
+        <p><img class="cartpic" src="asset/food-and-restaurant.png" style="width: 50%;"></p>
+        <p style="font-size: 30px;"><b>Your cart is empty</b></p>
+        <p style="font-size: 20px; color: #CECECE; padding-top: 0px;">Please add some items from the menu</p>
+      </div>
+  </div>
+</div>
+</body>
+</html>
